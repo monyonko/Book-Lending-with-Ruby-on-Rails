@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  book_id: MyString
+  borrow_date: 2025-03-21 17:20:42
+  expected_date: 2025-03-21 17:20:42
+  returned_on: 2025-03-21 17:20:42
+
+two:
+  user_id: MyString
+  book_id: MyString
+  borrow_date: 2025-03-21 17:20:42
+  expected_date: 2025-03-21 17:20:42
+  returned_on: 2025-03-21 17:20:42
