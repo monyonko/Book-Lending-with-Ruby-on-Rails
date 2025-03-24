@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration[8.0]
       t.boolean :is_admin, default: false, null: false
       t.boolean :is_author, default: false, null: false
       t.active :is_author, default: true, null: false
+      t.boolean :terms, default: false
 
       t.timestamps
     end
