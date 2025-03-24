@@ -1,8 +1,9 @@
 class CreateAuthors < ActiveRecord::Migration[8.0]
   def change
     create_table :authors do |t|
-      t.timestamp :verification_date
-      t.datetime :upload_date
+      t.string :first_name
+      t.string :second_name
+
 
       t.timestamps
     end
