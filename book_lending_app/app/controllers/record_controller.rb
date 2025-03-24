@@ -4,6 +4,11 @@ class RecordController < ApplicationController
     def index
         @add_record = Record.new
     end
+
+    #create record
+    def create
+        @save_record = Record.create()
+    end
     #modify record (either borrow date, returned date or expected date)
     def modify_record
         @update = Record.where(@book_id).upsert()

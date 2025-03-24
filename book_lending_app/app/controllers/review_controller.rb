@@ -12,7 +12,7 @@ class ReviewController < ApplicationController
 
     #get reviews on a certain book
     def get_book_reviews
-        @book_reviews = Review.where(id = @book_id)
+        @all_reviews = Review.where(id = @book_id)
     end
 
     #post review

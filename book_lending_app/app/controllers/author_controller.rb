@@ -11,6 +11,10 @@ class AuthorController < ApplicationController
         @suspend = Author.find_by().update()
     end
 
+    #send author details to db
+    def create
+        @update = Author.create()
+
     #delete author account
     def destroy
         @delete = Author.find_by().destroy

@@ -1,14 +1,20 @@
 class VerificationController < ApplicationController
     #verify book
     def index
-        @Verifications = Books.where(:verification_date = "")
-
+        @verifications = Books.where(:verification_date = "")
     end
+
+    #create verifications
+    def create
+        @create = Verifications.create()
+    end
+
     #suspend verification
-    def suspend_verification
-        Verifications.where().update(:status = )
+    def update
+        @suspend = Verifications.where().update(:status = )
     end
 
+    #show count
     def show_unverified_count
         Books.where().count
     end
