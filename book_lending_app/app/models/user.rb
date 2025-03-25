@@ -7,8 +7,8 @@ class User < ApplicationRecord
   has_many :reviews
 
   validates :username, :email, :password, :is_admin, :is_author, :is_active, presence: true
-  validates :username, :email, uniqueness: {message: 'An account with %{value} already exists'},
-  validates :username, length: {in: 5....30}
+  validates :username, :email, uniqueness: {message: 'An account with %{value} already exists'}
+  validates :username, length: {in: 5..30}
   validates :email, confirmation: true
   validates :email_confirmation, presence: true, if: :email_changed?
   validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }

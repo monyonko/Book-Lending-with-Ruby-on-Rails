@@ -1,0 +1,11 @@
+.show_books{
+    margin-top: 2em !important;
+    border:none;
+    background: #ececec;
+    padding: 1vh;
+    border-radius: 2px;
+}
+.title{
+    text-transform: uppercase;
+    padding: 0 0 .2vh 0;
+}

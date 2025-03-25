@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resource :session
   resources :passwords, param: :token
 
-  resource :registrations
+  resource :registrations 
   resource :reviews
   resource :verifications
   resource :sessions
@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get "new_record" => "record#add_record"
 
   get "create_user" => "registration#new"
+  get "login" => "sessions#new"
   get "verifications" => "verifications#index"
   get "count" => "verification#show_unverified_count"
   
@@ -47,6 +48,7 @@ Rails.application.routes.draw do
 
 
   delete "remove" => "author#delete"
+
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest

@@ -21,8 +21,22 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  
 
   <body>
-    <%= yield %>
+  <div class ="content_container">
+    <div class="header_section">
+        <p class="header_left">Lenders</p>
+        <div class="header_right">
+            <p class="signup">SIGNUP</p>
+            <p class-"login">LOGIN</p>
+        </div>
+    </div>
+ 
+  </div>
+  <div class="body_section">
+     <%= yield %>
+  </div>
+   
   </body>
 </html>

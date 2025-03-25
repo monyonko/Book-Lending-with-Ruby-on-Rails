@@ -8,3 +8,50 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+p{
+    margin:0;
+    padding:0;
+}
+.content_container{
+    width: inherit;
+    height: inherit;
+}
+.content_container .header_section{
+    display:flex; 
+    flex-direction: row;  
+    background: #d3d3d3;
+    font-size: 2em;
+    align-items: center;
+    padding: 5px 1px;
+}
+.content_container .header_section .header_right{
+    flex:1;
+    display:flex;
+    justify-content: flex-end; 
+    font-size: .5em !important;
+}
+.header_right p{
+    margin-right: 2em !important;
+}
+.content_container .header_section .header_left{
+    flex:1;
+    margin-left: 2em !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.body_section{
+    width: inherit;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

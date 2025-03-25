@@ -1,0 +1,48 @@
+.enclose_form{
+    width:20%;
+    border: 1px solid #d3d3d3;
+    border-radius:4px;
+}
+.form_heading{
+    background: #d3d3d3;
+    padding: 2vh;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.enclose_form .form_field{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vh;
+}
+.enclose_form .form_field input{
+    border: none;
+    border: 1px solid #000;
+    padding: 1vh;
+    border-radius: 2px;
+}
+.enclose_form .form_other_field{
+    display: flex;
+    flex-direction: row;
+    padding: 1vh 2vh;
+}
+.enclose_form .end{
+    justify-self: flex-end !important;
+    align-items: center;
+}
+.enclose_form .form_other_field input{
+    border:none;
+    background: transparent;
+    text-transform: uppercase;
+}
+.enclose_form .form_other_field .login{
+    color: blue;
+    margin-right: 2px;
+}
+.enclose_form .form_other_field .signup{
+    color: #fff;
+    background: #008080;
+    border-radius:2px;
+    padding: 1vh;
+
+}
