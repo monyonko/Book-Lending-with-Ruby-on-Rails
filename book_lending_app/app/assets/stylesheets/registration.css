@@ -46,3 +46,21 @@
     padding: 1vh;
 
 }
+.enclose_form a{
+    color: #008080;
+    text-decoration: none !important;
+}
+.main{
+    display: flex;
+    flex-direction: column !important;
+}
+.main ._reset{
+    background: #008080 !important;
+    border-radius: 2px;
+    color: white;
+    padding: 1vh;
+}
+.main ._login{
+    padding: 1vh;
+    color: #008080;
+}
